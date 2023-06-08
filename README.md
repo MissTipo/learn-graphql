@@ -1,5 +1,5 @@
 # Graphene
-Learning REST alternative for efficient data fetching and flexible API using single endpoint
+Learning REST alternative for efficient data fetching and flexible API development using single endpoint
 
 - [Defining Schema]()
 - [Setting up a GraphQL server]()
