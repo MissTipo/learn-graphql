@@ -1,0 +1,5 @@
+flask-graphql
+graphene
+graphql-core
+requests
+extraction
