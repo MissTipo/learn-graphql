@@ -12,9 +12,10 @@ def extract(my_url):
     html = requests.get(my_url).text
     extracted = extraction.Extractor().extract(html, source_url=my_url)
     print(extracted)
+    return extracted
 
 
-extract('https://www.howtographql.com/basics/1-graphql-is-the-better-rest/')
+# extract('https://www.howtographql.com/basics/1-graphql-is-the-better-rest/')
 
 # define the schema
 
@@ -43,7 +44,7 @@ class Query(graphene.ObjectType):
             return ValueError("Failed to extract data from the provided URL.")
         return my_website(url=url,
                           title=extracted.title,
-                          description=extract.description,
+                          description=extracted.description,
                           image=extracted.image,
                           )
 
